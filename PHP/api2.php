@@ -8,7 +8,7 @@ if ($reverse_string == $string){
 }
 
 $array = ["original_string" => $string,
-          "reverse_string" => strrev($string),
+          "reverse_string" => $reverse_string,
           "palindrome" => $palindrome];
 
 echo json_encode($array);
