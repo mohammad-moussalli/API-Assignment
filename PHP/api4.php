@@ -13,6 +13,5 @@ $array =["password" => $hashed_password,
          "password_validity" => $valid_password];
 
 echo json_encode($array);
-
 ?>
 
