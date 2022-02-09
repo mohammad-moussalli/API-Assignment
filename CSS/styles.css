@@ -1,5 +1,5 @@
 body{
-    background-color: #7a7ab1;
+    background-color: #ff5050;
     max-width: 100vw;
     max-height: 100vh;
     display: flex;
@@ -8,14 +8,14 @@ body{
 }
 
 .container{
-    background-color: #d3556f;
+    background-color: #3cbae0;
     display: flex;
     border-radius: 20px;
     padding: 20px;
     margin: 0px 100px;
     text-align: center;
     border-style: solid;
-    border-color: #ffe600;
+    border-color: #ff5050;
     margin: 100px;
     width: 80vw;
     height: 70vh;
@@ -39,7 +39,7 @@ h4{
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
-    border-right-color: #ffe600;
+    border-right-color: #ff5050;
     border-right-style: solid;
     align-content: center;
     align-items: center;
@@ -51,7 +51,7 @@ h4{
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
-    border-right-color: #ffe600;
+    border-right-color: #ff5050;
     border-right-style: solid;
 
 }
@@ -62,7 +62,7 @@ h4{
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
-    border-right-color: #ffe600;
+    border-right-color: #ff5050;
     border-right-style: solid;
 }
 
@@ -80,7 +80,7 @@ h4{
     cursor: pointer;
     background-color: white;
     color: black;
-    border: 2px solid #ffe600;
+    border: 2px solid #ff5050;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
@@ -90,12 +90,12 @@ h4{
 }
 
 .buttons:hover{
-    background-color: #ffe600;
+    background-color: #ff5050;
     color: white;
 }
 
 input{
-    border: 2px solid #ffe600;
+    border: 2px solid #ff5050;
     border-radius: 4px;
     font-family: 'Open Sans';
     font-style: normal;
@@ -113,7 +113,7 @@ input{
         flex-basis: 100%;
         padding: 20px;
         border-bottom-style: solid;
-        border-bottom-color: #ffe600;
+        border-bottom-color: #ff5050;
         border-right-style: none;
     }
     
@@ -121,7 +121,7 @@ input{
         flex-basis: 100%;
         padding: 20px;
         border-bottom-style: solid;
-        border-bottom-color: #ffe600;
+        border-bottom-color: #ff5050;
         border-right-style: none;
     
     }
@@ -129,7 +129,7 @@ input{
         flex-basis: 100%;
         padding: 20px;
         border-bottom-style: solid;
-        border-bottom-color: #ffe600;
+        border-bottom-color: #ff5050;
         border-right-style: none;
     }
     
