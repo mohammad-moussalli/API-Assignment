@@ -20,3 +20,21 @@ async function getAPI1(url){
     document.getElementById("x_value").textContent += json_object.x;
     document.getElementById("y_value").textContent += json_object.y;
 }
+
+buttons[1].addEventListener("click", function(){
+    let palindrome = document.getElementById("palindrome").value;
+    let api2 = "http://localhost/API-Assignment/PHP/api2.php?";
+    document.getElementById("palindrome").textContent = "The string inputed is";
+    api2 += "original_string="+palindrome;
+    getAPI2(api2);
+});
+
+async function getAPI2(url){
+    const response = await fetch(url);
+    const json_object = await response.json();
+    if(json_object.palindrome == true){
+        document.getElementById("palindrome_value").textContent += " a palindrome.";
+    }else{
+        document.getElementById("palindrome_value").textContent += " not a palindrome.";
+    }
+}
