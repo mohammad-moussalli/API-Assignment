@@ -1,4 +1,5 @@
 <?php
+header('Access-Control-Allow-Origin: *');
 
 $str = $_GET["str"];
 $clean_str = trim(preg_replace('/\s+/',' ',  $str ));
