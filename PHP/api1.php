@@ -9,5 +9,4 @@ $array = ["x" => $x ,
           "value" => $value];
 
 echo json_encode($array);
-
 ?>
