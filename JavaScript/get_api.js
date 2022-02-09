@@ -51,14 +51,18 @@ async function getAPI3(url){
 
 buttons[3].addEventListener("click", function(){
     let password = document.getElementById("password").value;
-    let api3 = "http://localhost/API-Assignment/PHP/api3.php?";
-    document.getElementById("white_spaces_value").textContent = "The clean string is ";
-    api3 += "original_str=" + white_spaces;
-    getAPI3(api3); 
+    let api4 = "http://localhost/API-Assignment/PHP/api4.php?";
+    document.getElementById("password_value").textContent = "The password is ";
+    api4 += "password=" + password;
+    getAPI4(api4); 
 });
 
-async function getAPI3(url){
+async function getAPI4(url){
     const response = await fetch(url);
     const json_object = await response.json();
-    document.getElementById("palindrome_value").textContent += json_object.clean_str;
+    if(json_object.password_validity == true){
+        document.getElementById("password_value").textContent += "valid.";
+    }else{
+        document.getElementById("password_value").textContent += "not valid.";
+    }
 }
