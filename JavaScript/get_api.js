@@ -4,8 +4,7 @@ buttons[0].addEventListener("click", function(){
     let x = document.getElementById("x").value;
     let y = document.getElementById("y").value;
     let api1 = "http://localhost/API-Assignment/PHP/api1.php?";
-    document.getElementById("x_value").textContent = "X is equal to: ";
-    document.getElementById("y_value").textContent = "Y is equal to: ";
+    document.getElementById("Value1").textContent = "The equation is: ";
     api1 += "x=" + x + "&y="  + y;
     getAPI1(api1);
 });
@@ -13,8 +12,8 @@ buttons[0].addEventListener("click", function(){
 async function getAPI1(url){
     const response = await fetch(url);
     const json_object = await response.json();
-    document.getElementById("x_value").textContent += json_object.x;
-    document.getElementById("y_value").textContent += json_object.y;
+    document.getElementById("Value1").textContent += "2 * "+ json_object.x +" + " + json_object.y + " % 2";
+    
 }
 
 buttons[1].addEventListener("click", function(){
