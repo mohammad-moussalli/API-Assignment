@@ -1,8 +1,5 @@
 let buttons = document.getElementsByClassName("buttons");
 
-let api3 = "http://localhost/API-Assignment/PHP/api3.php?";
-let api4 = "http://localhost/API-Assignment/PHP/api4.php?";
-
 buttons[0].addEventListener("click", function(){
     let x = document.getElementById("x").value;
     let y = document.getElementById("y").value;
@@ -36,4 +33,32 @@ async function getAPI2(url){
     }else{
         document.getElementById("palindrome_value").textContent += " not a palindrome.";
     }
+}
+
+buttons[2].addEventListener("click", function(){
+    let white_spaces = document.getElementById("white_spaces").value;
+    let api3 = "http://localhost/API-Assignment/PHP/api3.php?";
+    document.getElementById("white_spaces_value").textContent = "The clean string is ";
+    api3 += "original_str=" + white_spaces;
+    getAPI3(api3); 
+});
+
+async function getAPI3(url){
+    const response = await fetch(url);
+    const json_object = await response.json();
+    document.getElementById("palindrome_value").textContent += json_object.clean_str;
+}
+
+buttons[3].addEventListener("click", function(){
+    let password = document.getElementById("password").value;
+    let api3 = "http://localhost/API-Assignment/PHP/api3.php?";
+    document.getElementById("white_spaces_value").textContent = "The clean string is ";
+    api3 += "original_str=" + white_spaces;
+    getAPI3(api3); 
+});
+
+async function getAPI3(url){
+    const response = await fetch(url);
+    const json_object = await response.json();
+    document.getElementById("palindrome_value").textContent += json_object.clean_str;
 }
