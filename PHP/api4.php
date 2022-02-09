@@ -1,4 +1,5 @@
 <?php
+header('Access-Control-Allow-Origin: *');
 
 $password = $_GET["password"];
 $hashed_password = hash('sha256', $password);
@@ -14,3 +15,4 @@ $array =["password" => $hashed_password,
 echo json_encode($array);
 
 ?>
+
