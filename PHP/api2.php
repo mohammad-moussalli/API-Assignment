@@ -15,5 +15,4 @@ $array = ["original_string" => $string,
           "palindrome" => $palindrome];
 
 echo json_encode($array);
-
 ?>
