@@ -37,7 +37,7 @@ async function getAPI2(url){
 buttons[2].addEventListener("click", function(){
     let white_spaces = document.getElementById("white_spaces").value;
     let api3 = "http://localhost/API-Assignment/PHP/api3.php?";
-    document.getElementById("white_spaces_value").textContent = "The clean string is ";
+    document.getElementById("white_spaces_value").textContent = "The clean string is: ";
     api3 += "original_str=" + white_spaces;
     getAPI3(api3); 
 });
@@ -45,7 +45,7 @@ buttons[2].addEventListener("click", function(){
 async function getAPI3(url){
     const response = await fetch(url);
     const json_object = await response.json();
-    document.getElementById("palindrome_value").textContent += json_object.clean_str;
+    document.getElementById("white_spaces_value").textContent += json_object.clean_str;
 }
 
 buttons[3].addEventListener("click", function(){
