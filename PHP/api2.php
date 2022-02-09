@@ -1,11 +1,13 @@
 <?php
 header('Access-Control-Allow-Origin: *');
 
-$string = $_GET["string"];
+$string = $_GET["original_string"];
 $palindrome = FALSE;
 $reverse_string = strrev($string);
 if ($reverse_string == $string){
     $palindrome = TRUE;
+}else{
+    $palindrome = FALSE;
 }
 
 $array = ["original_string" => $string,
