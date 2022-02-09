@@ -1,6 +1,5 @@
 let buttons = document.getElementsByClassName("buttons");
 
-let api2 = "http://localhost/API-Assignment/PHP/api2.php?";
 let api3 = "http://localhost/API-Assignment/PHP/api3.php?";
 let api4 = "http://localhost/API-Assignment/PHP/api4.php?";
 
@@ -24,7 +23,7 @@ async function getAPI1(url){
 buttons[1].addEventListener("click", function(){
     let palindrome = document.getElementById("palindrome").value;
     let api2 = "http://localhost/API-Assignment/PHP/api2.php?";
-    document.getElementById("palindrome").textContent = "The string inputed is";
+    document.getElementById("palindrome_value").textContent = "The string inputed is";
     api2 += "original_string="+palindrome;
     getAPI2(api2);
 });
