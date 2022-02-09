@@ -1,7 +1,7 @@
 <?php
 header('Access-Control-Allow-Origin: *');
 
-$str = $_GET["str"];
+$str = $_GET["original_str"];
 $clean_str = trim(preg_replace('/\s+/',' ',  $str ));
 
 $array = ["original_str" => $str,
